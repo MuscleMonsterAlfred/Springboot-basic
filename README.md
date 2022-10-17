@@ -54,6 +54,6 @@ maven配置：
 </parent>
 ```
 他来掌控springboot应用里的所有依赖的版本
-springboot的版本控制中心，以后导入所有的依赖是不需要加版本号
+springboot的版本控制中心，以后导入所有的依赖是不需要加版本号（dependencies以外的除开）
 
 
