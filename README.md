@@ -45,5 +45,14 @@ maven配置：
      </plugins>
 </build>
 ```
+他的父项目是
+```
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-dependencies</artifactId>
+    <version>2.7.4</version>
+</parent>
+```
+
 
 
