@@ -19,26 +19,26 @@ maven配置：
 
 正常最初级的依赖只需要
 
-<parent>
-     <groupId>org.springframework.boot</groupId>
-     <artifactId>spring-boot-starter-parent</artifactId>
-     <version>2.7.4</version>
-     <relativePath/> <!-- lookup parent from repository -->
-</parent>
-<dependencies>
-     <dependency>
-     <groupId>org.springframework.boot</groupId>
-     <artifactId>spring-boot-starter-web</artifactId>
-     </dependency>
-</dependencies>
+<parent>\
+     <groupId>org.springframework.boot</groupId>\
+     <artifactId>spring-boot-starter-parent</artifactId>\
+     <version>2.7.4</version>\
+     <relativePath/> <!-- lookup parent from repository -->\
+</parent>\
+<dependencies>\
+     <dependency>\
+     <groupId>org.springframework.boot</groupId>\
+     <artifactId>spring-boot-starter-web</artifactId>\
+     </dependency>\
+</dependencies>\
 
 这个插件可以直接将项目打成jar包，不需要安装tomcat
-<build>
-     <plugins>
-     <plugin><!-- 这个插件可以将应用打成一个jar包-->
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>2.4.4</version>
-     </plugin>
-     </plugins>
-</build>
+<build>\
+     <plugins>\
+     <plugin><!-- 这个插件可以将应用打成一个jar包-->\
+        <groupId>org.springframework.boot</groupId>\
+        <artifactId>spring-boot-maven-plugin</artifactId>\
+        <version>2.4.4</version>\
+     </plugin>\
+     </plugins>\
+</build>\
