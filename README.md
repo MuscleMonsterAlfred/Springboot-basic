@@ -4,7 +4,7 @@ Springboot基础框架，可以在此基础上进行拓展
 使用的是springboot 1.5.9
 
 maven配置：
- <profiles>
+ ```<profiles>
     <id>jdk-1.8</id>
     <activation>
       <activeByDefault>true</activeByDefault>
@@ -19,7 +19,7 @@ maven配置：
 
 正常最初级的依赖只需要
 
-<parent>\
+<parent>
      <groupId>org.springframework.boot</groupId>
      <artifactId>spring-boot-starter-parent</artifactId>
      <version>2.7.4</version>
