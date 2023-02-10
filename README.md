@@ -18,6 +18,7 @@ maven配置:
       <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
     </properties>
  </profiles>
+ ```
 正常最初级的依赖只需要
 ```
 <parent>
@@ -32,6 +33,7 @@ maven配置:
      <artifactId>spring-boot-starter-web</artifactId>
      </dependency>
 </dependencies>
+```
 这个插件可以直接将项目打成jar包，不需要安装tomcat
 ```
 <build>
@@ -43,6 +45,7 @@ maven配置:
      </plugin>
      </plugins>
 </build>
+```
 他的父项目是
 ```
 <parent>
@@ -50,4 +53,5 @@ maven配置:
     <artifactId>spring-boot-dependencies</artifactId>
     <version>2.7.4</version>
 </parent>
+```
 他来掌控springboot应用里的所有依赖的版本 springboot的版本控制中心，以后导入所有的依赖是不需要加版本号（dependencies以外的除开）
