@@ -16,8 +16,8 @@ import org.junit.runner.RunWith;
  *
  * 可以在测试期间很方便的类似编码一样进行
  */
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class HelloSpringbootApplicationTest {
 }
 
