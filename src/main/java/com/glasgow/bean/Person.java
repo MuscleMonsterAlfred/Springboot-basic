@@ -9,8 +9,11 @@ package com.glasgow.bean;
  * @Version 1.0
  **/
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.Date;
 import java.util.List;
@@ -25,10 +28,15 @@ import java.util.Map;
  *
  */
 @Component
+//@PropertySource("classpath:person.properties") 指定固定的配置文件
 @ConfigurationProperties(prefix = "person")
+@Validated//校验的注解
 public class Person {
 
+//    @Value("${person.last-name}")
+    //@Email字段必须是邮箱格式
     private String lastName;
+//    @Value("#{11*2}")
     private Integer age;
     private Boolean boss;
     private Date birth;

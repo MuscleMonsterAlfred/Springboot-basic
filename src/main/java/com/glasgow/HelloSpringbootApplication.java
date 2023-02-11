@@ -2,6 +2,7 @@ package com.glasgow;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ImportResource;
 
 /**
  * @program: springboot-basic
@@ -15,6 +16,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @SpringBootApplication 标注是一个springboot项目
  */
+//自己写的配置文件xml，但是现在已经不推荐使用这种方式
+//@ImportResource(locations = {"classpath:beans.xml"})
 @SpringBootApplication
 public class HelloSpringbootApplication {
 
